@@ -39,7 +39,7 @@ This portfolio website serves as a comprehensive showcase of my technical expert
 ## 🚀 Quick Start
 
 ### View Live Demo
-Visit the deployed website: `https://dipan313.github.io/Portfolio-Website/`
+Visit the deployed website: `https://dipanmazumder.netlify.app/`
 
 ### Run Locally
 
