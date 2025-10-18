@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dipan Mazumder - AI/ML Engineer &amp; Team Lead</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">DM</a>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#competitions" class="nav-link">Achievements</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+          <div class="theme-toggle">
+            <input
+              type="checkbox"
+              id="theme-toggle"
+              class="theme-toggle__input"
+            />
+            <label for="theme-toggle" class="theme-toggle__label">
+              <span class="theme-toggle__sun">☀️</span>
+              <span class="theme-toggle__moon">🌙</span>
+            </label>
+          </div>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div>
+            <div class="hero-image">
+              <div
+                class="image-placeholder"
+                style="padding: 10; margin-top: 5%"
+              >
+                <img
+                  src="assets/dipan.jpg"
+                  alt="Dipan Mazumder"
+                  style="
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    border: 4px solid #00d4ff;
+                    box-shadow: 0 0 40px rgba(0, 212, 255, 0.5);
+                    animation: fadeIn 1s ease-out;
+                  "
+                  class="profile-img"
+                />
+                <!-- <i class="fas fa-user-circle"></i> -->
+              </div>
+            </div>
+          </div>
+          <h1 class="hero-name">DIPAN MAZUMDER</h1>
+          <p class="hero-title">
+            AI/ML Engineer &amp; Team Lead | Competition Winner | Building
+            Production AI Systems
+          </p>
+          <div class="typing-container">
+            <span class="typing-text"></span>
+            <span class="cursor">|</span>
+          </div>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <button
+              onclick="downloadResume()"
+              class="btn btn-outline download-btn"
+            >
+              <i class="fas fa-download"></i>
+              Download Resume
+            </button>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://github.com/dipan313"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/dipanmazumder"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:dipanmazumder313@gmail.com" class="social-link">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about" style="margin-top: 3%">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">
+            Passionate AI/ML Engineer driving innovation through code
+          </p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-intro">
+              I'm a pre-final year B.Tech IT student at Techno India College of
+              Technology, specializing in AI/ML and Computer Vision. As Team
+              Lead for Dot Slash, I've guided our team to victory in multiple
+              competitions, including 1st place among 140+ teams in our college
+              hackathon.
+            </p>
+            <p class="about-description">
+              With a strong foundation in machine learning, computer vision, and
+              full-stack development, I focus on building production-ready AI
+              systems that solve real-world problems. My expertise spans from
+              SRGAN implementations for healthcare to real-time driver
+              monitoring systems.
+            </p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-trophy"></i>
+                <span>Competition Winner</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-users"></i>
+                <span>Team Leadership</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-code"></i>
+                <span>Production AI Systems</span>
+              </div>
+            </div>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-card" data-count="8">
+              <div class="stat-number">0+</div>
+              <div class="stat-label">Completed Projects</div>
+            </div>
+            <div class="stat-card" data-count="3">
+              <div class="stat-number">0</div>
+              <div class="stat-label">Active Projects</div>
+            </div>
+            <div class="stat-card" data-count="1836">
+              <div class="stat-number">0+</div>
+              <div class="stat-label">LinkedIn Followers</div>
+            </div>
+            <div class="stat-card" data-count="140">
+              <div class="stat-number">0+</div>
+              <div class="stat-label">Teams Competed Against</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Competition Achievements Section -->
+    <section id="competitions" class="competitions">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Competition Achievements</h2>
+          <p class="section-subtitle">
+            Recognition for technical excellence and innovation
+          </p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon">🥇</div>
+            <div class="timeline-content">
+              <h3>1st Place - College Internal Hackathon</h3>
+              <h4>Team Dot Slash</h4>
+              <p>Won among 140+ teams with innovative AI solution</p>
+              <span class="timeline-date">2024</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">🏆</div>
+            <div class="timeline-content">
+              <h3>Finalist - Hack4Bengal</h3>
+              <h4>Eastern India's Largest Hackathon</h4>
+              <p>
+                SARATHI project gained recognition for driver safety innovation
+              </p>
+              <span class="timeline-date">2024</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">🌍</div>
+            <div class="timeline-content">
+              <h3>Global Recognition - Hack This Fall</h3>
+              <h4>International Hackathon</h4>
+              <p>Vrinda agricultural platform received global recognition</p>
+              <span class="timeline-date">2024</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">🎯</div>
+            <div class="timeline-content">
+              <h3>SIH 2025 Participant</h3>
+              <h4>Smart India Hackathon</h4>
+              <p>
+                2 Projects qualified - Healthcare &amp; Public Safety domains
+              </p>
+              <span class="timeline-date">2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects" style="margin-top: 20%">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            Building the future with AI and innovation
+          </p>
+        </div>
+        <div class="projects-grid">
+          <!-- SARATHI Project -->
+          <div class="project-card" data-project="sarathi">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-car-side"></i>
+              </div>
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/dipan313/SARATHI"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">SARATHI</h3>
+              <p class="project-subtitle">Driver Attention Monitoring System</p>
+              <p class="project-description">
+                AI-based driver safety system using computer vision. Finalist at
+                Hack4Bengal.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Computer Vision</span>
+                <span class="tag">MediaPipe</span>
+                <span class="tag">Real-time</span>
+              </div>
+              <div class="project-highlight">
+                <i class="fas fa-trophy"></i>
+                <span>Hack4Bengal Finalist • Public Safety</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Medlens AI Project -->
+          <div class="project-card" data-project="medlens">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-stethoscope"></i>
+              </div>
+              <div class="project-status">In Development</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Medlens AI</h3>
+              <p class="project-subtitle">Medical Image Enhancement</p>
+              <p class="project-description">
+                SRGAN-based super-resolution for medical imaging in
+                resource-constrained environments.
+              </p>
+              <div class="project-tags">
+                <span class="tag">SRGAN</span>
+                <span class="tag">Healthcare AI</span>
+                <span class="tag">TensorFlow</span>
+              </div>
+              <div class="project-highlight">
+                <i class="fas fa-hospital"></i>
+                <span>SIH 2025 • Healthcare AI • Deep Learning</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vrinda Project -->
+          <div class="project-card" data-project="vrinda">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-seedling"></i>
+              </div>
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/dipan313/Vrinda"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Vrinda</h3>
+              <p class="project-subtitle">Agricultural Intelligence Platform</p>
+              <p class="project-description">
+                Complete agricultural disease detection platform with community
+                features.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Full-Stack</span>
+                <span class="tag">AI Detection</span>
+                <span class="tag">Django</span>
+              </div>
+              <div class="project-highlight">
+                <i class="fas fa-globe"></i>
+                <span>Hack This Fall 2024 • Global Recognition</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Khelo Sathi Project -->
+          <div class="project-card" data-project="khelo">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-running"></i>
+              </div>
+              <div class="project-status">In Development</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Khelo Sathi</h3>
+              <p class="project-subtitle">Sports Assessment Platform</p>
+              <p class="project-description">
+                AI-powered sports performance analysis for India's 792M
+                smartphone users.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Computer Vision</span>
+                <span class="tag">Mobile</span>
+                <span class="tag">Sports Tech</span>
+              </div>
+              <div class="project-highlight">
+                <i class="fas fa-chart-line"></i>
+                <span>SIH 2025 • Sports Analytics • Market Research</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- GeoShare Project -->
+          <div class="project-card" data-project="GeoShare">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-location"></i>
+              </div>
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/dipan313/GeoShare"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">GeoShare</h3>
+              <p class="project-subtitle">Real-Time Geolocation sharing</p>
+              <p class="project-description">
+                It is a Django-based web application that allows users to
+                generate and share their real-time geolocation via a unique
+                link.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Django</span>
+                <span class="tag">API</span>
+                <span class="tag">Distance-Calculation</span>
+              </div>
+              <div class="project-highlight">
+                <i class="fas fa-shield-alt"></i>
+                <span>Full-Stack • Geo-location API • Real-time sharing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pose Estimation Project -->
+          <div class="project-card" data-project="pose-estimation">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-male"></i>
+              </div>
+              <div class="project-overlay">
+                <a
+                  href="https://github.com/dipan313/PoseEstimation"
+                  target="_blank"
+                  class="project-link"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Pose Estimation</h3>
+              <p class="project-subtitle">Detecting Human Pose</p>
+              <p class="project-description">
+                Foundation in Computer Vision world with detecgting the human
+                pose using Mediapipe
+              </p>
+              <div class="project-tags">
+                <span class="tag">Computer Vision</span>
+                <span class="tag">MediaPipe</span>
+                <span class="tag">Python</span>
+              </div>
+              <div class="project-highlight">
+                <i class="fas fa-brain"></i>
+                <span>Image Processing • Real Time • OpenCV</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="skills" style="margin-top: -25%">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">
+            Expertise across the AI/ML technology stack
+          </p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>AI &amp; Machine Learning</h3>
+            <div class="skill-items">
+              <span class="skill-item">TensorFlow</span>
+              <span class="skill-item">PyTorch</span>
+              <span class="skill-item">SRGAN</span>
+              <span class="skill-item">YOLO</span>
+              <span class="skill-item">GANs</span>
+              <span class="skill-item">Deep Learning</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Computer Vision</h3>
+            <div class="skill-items">
+              <span class="skill-item">MediaPipe</span>
+              <span class="skill-item">OpenCV</span>
+              <span class="skill-item">Image Processing</span>
+              <span class="skill-item">Real-time Detection</span>
+              <span class="skill-item">Pose Estimation</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Programming</h3>
+            <div class="skill-items">
+              <span class="skill-item">Python</span>
+              <span class="skill-item">C</span>
+              <span class="skill-item">Java</span>
+              <span class="skill-item">JavaScript</span>
+              <span class="skill-item">Data Structures</span>
+              <span class="skill-item">Algorithms</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Web Development</h3>
+            <div class="skill-items">
+              <span class="skill-item">Django</span>
+              <span class="skill-item">React</span>
+              <span class="skill-item">Full-Stack</span>
+              <span class="skill-item">RESTful APIs</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Tools &amp; Platforms</h3>
+            <div class="skill-items">
+              <span class="skill-item">Git/GitHub</span>
+              <span class="skill-item">AWS</span>
+              <span class="skill-item">Docker</span>
+              <span class="skill-item">TensorFlow Lite</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Leadership</h3>
+            <div class="skill-items">
+              <span class="skill-item">Team Leadership</span>
+              <span class="skill-item">Competition Strategy</span>
+              <span class="skill-item">Problem Solving</span>
+              <span class="skill-item">Mentoring</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials" style="margin-top: 45%">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">What People Say</h2>
+          <p class="section-subtitle">
+            Testimonials from teammates, judges, and professors
+          </p>
+        </div>
+
+        <div class="testimonials-carousel">
+          <div class="testimonial-slider">
+            <div class="testimonial-card active">
+              <div class="quote-icon" style="margin-top: -5%">"</div>
+              <p class="testimonial-quote" style="margin-top: -5%">
+                Dipan's leadership in Team Dot Slash was exceptional. His
+                technical expertise and problem-solving abilities led us to
+                victory among 140+ teams. He has an incredible ability to break
+                down complex problems and mentor team members.
+              </p>
+              <div class="testimonial-author" style="margin-top: -5%">
+                <div class="author-avatar">S</div>
+                <div class="author-info" style="margin-top: -5%">
+                  <h4>Computer Vision Developer</h4>
+                  <p>Co-lead, Team Dot Slash</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="quote-icon" style="margin-top: -5%">"</div>
+              <p class="testimonial-quote" style="margin-top: -5%">
+                Outstanding performance in the hackathon. The SARATHI project
+                showed mature understanding of AI applications in real-world
+                scenarios. The implementation was clean, professional and
+                demonstrated production-ready thinking.
+              </p>
+              <div class="testimonial-author" style="margin-top: -5%">
+                <div class="author-avatar">D</div>
+                <div class="author-info" style="margin-top: -5%">
+                  <h4>Technical Judge</h4>
+                  <p>Senior AI Researcher, Hack4Bengal Judge</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="quote-icon" style="margin-top: -5%">"</div>
+              <p class="testimonial-quote" style="margin-top: -5%">
+                A dedicated student with remarkable grasp of advanced concepts.
+                His projects demonstrate real-world problem-solving skills
+                beyond typical academic work. Dipan consistently goes above and
+                beyond in his learning journey.
+              </p>
+              <div class="testimonial-author" style="margin-top: -5%">
+                <div class="author-avatar">P</div>
+                <div class="author-info" style="margin-top: -5%">
+                  <h4>HOD, IT Department</h4>
+                  <p>Professor, TINT</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-nav">
+            <button
+              class="nav-dot active"
+              onclick="showTestimonial(0)"
+            ></button>
+            <button class="nav-dot" onclick="showTestimonial(1)"></button>
+            <button class="nav-dot" onclick="showTestimonial(2)"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Section with Inline Styles and Script -->
+    <style>
+      /* Coming Soon Badge */
+      .coming-soon-badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+        color: #1f2937;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        box-shadow: 0 2px 8px rgba(251, 191, 36, 0.3);
+        z-index: 10;
+        animation: pulseBadge 2s ease-in-out infinite;
+      }
+
+      @keyframes pulseBadge {
+        0%,
+        100% {
+          transform: scale(1);
+          box-shadow: 0 2px 8px rgba(251, 191, 36, 0.3);
+        }
+        50% {
+          transform: scale(1.05);
+          box-shadow: 0 4px 16px rgba(251, 191, 36, 0.5);
+        }
+      }
+
+      /* Blog image needs to be relative for badge positioning */
+      .blog-image {
+        position: relative;
+      }
+
+      /* Coming Soon Notification */
+      .coming-soon-notification {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 10000;
+        animation: slideInRight 0.5s ease-out;
+      }
+
+      .notification-content {
+        background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+        border: 2px solid #fbbf24;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        max-width: 400px;
+        display: flex;
+        gap: 15px;
+        align-items: start;
+      }
+
+      .notification-icon {
+        font-size: 2rem;
+        flex-shrink: 0;
+      }
+
+      .notification-text h4 {
+        color: #fbbf24;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 0 0 8px 0;
+      }
+
+      .notification-text p {
+        color: #e2e8f0;
+        margin: 0 0 8px 0;
+        font-size: 0.95rem;
+      }
+
+      .notification-text small {
+        color: #94a3b8;
+        font-size: 0.85rem;
+      }
+
+      .notification-close {
+        background: none;
+        border: none;
+        color: #94a3b8;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+        transition: color 0.3s;
+        line-height: 1;
+      }
+
+      .notification-close:hover {
+        color: #fbbf24;
+      }
+
+      @keyframes slideInRight {
+        from {
+          transform: translateX(400px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      /* Mobile responsive */
+      @media (max-width: 768px) {
+        .coming-soon-notification {
+          right: 10px;
+          left: 10px;
+        }
+
+        .notification-content {
+          max-width: 100%;
+          padding: 15px;
+        }
+
+        .notification-icon {
+          font-size: 1.5rem;
+        }
+
+        .notification-text h4 {
+          font-size: 1rem;
+        }
+
+        .notification-text p {
+          font-size: 0.85rem;
+        }
+      }
+    </style>
+
+    <!-- Blog Section -->
+    <section
+      id="blog"
+      class="blog"
+      style="margin-top: -45%; margin-bottom: 70%"
+    >
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Technical Blog</h2>
+          <p class="section-subtitle">
+            Sharing insights from AI/ML development and competition experiences
+          </p>
+        </div>
+        <div class="blog-grid">
+          <!-- 1: SARATHI -->
+          <a
+            class="blog-card"
+            href="https://www.kaggle.com/writeups/dipanmazumder/sarathi-unified-attention-monitoring-for-transpo#3301512"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="blog-image">
+              <div class="blog-placeholder">
+                <i class="fas fa-car"></i>
+              </div>
+              <div class="blog-category">Computer Vision</div>
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">
+                Building SARATHI: Real-time Computer Vision for Driver Safety
+              </h3>
+              <p class="blog-excerpt">
+                Deep dive into building a production-ready driver attention
+                monitoring system using MediaPipe and OpenCV
+              </p>
+              <div class="blog-meta">
+                <span class="blog-date">March 2024</span>
+                <span class="blog-read-time">8 min read</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 2: SRGAN - Coming Soon -->
+          <div
+            class="blog-card"
+            onclick="showComingSoon('SRGAN in Medical Imaging: Enhancing Low-Quality Scans')"
+            style="cursor: pointer"
+          >
+            <div class="blog-image">
+              <div class="blog-placeholder">
+                <i class="fas fa-x-ray"></i>
+              </div>
+              <div class="blog-category">AI/ML</div>
+              <div class="coming-soon-badge">📝 Coming Soon</div>
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">
+                SRGAN in Medical Imaging: Enhancing Low-Quality Scans
+              </h3>
+              <p class="blog-excerpt">
+                How we used SRGAN to improve medical image quality in
+                resource-constrained healthcare environments
+              </p>
+              <div class="blog-meta">
+                <span class="blog-date">...</span>
+                <span class="blog-read-time">10 min read</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3: Hackathon  -->
+          <a
+            class="blog-card"
+            href="https://www.linkedin.com/posts/dipanmazumder_smartindiahackathon-sih2025-hackathonwinner-activity-7375085121793671168-1c3h?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEPgLo8B6vtvx502HiV7pthxr1PTf3twvvs"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="blog-image">
+              <div class="blog-placeholder">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <div class="blog-category">Hackathons</div>
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">
+                Winning Strategies: How We Took 1st Place at College Hackathon
+              </h3>
+              <p class="blog-excerpt">
+                Behind the scenes of Team Dot Slash's victory strategy,
+                technical decisions and team coordination
+              </p>
+              <div class="blog-meta">
+                <span class="blog-date">October 2025</span>
+                <span class="blog-read-time">6 min read</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 4: What is the best tutorial for making X? -->
+          <a
+            class="blog-card"
+            href="https://www.linkedin.com/posts/dipanmazumder_learninginpublic-buildtolearn-engineeringlife-activity-7356392462052929538-Z0cz?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEPgLo8B6vtvx502HiV7pthxr1PTf3twvvs"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="blog-image">
+              <div class="blog-placeholder">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="blog-category">Career</div>
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">
+                What is the best tutorial for making X?
+              </h3>
+              <p class="blog-excerpt">
+                Sharing the experience, how to build Projects
+              </p>
+              <div class="blog-meta">
+                <span class="blog-date">June 2025</span>
+                <span class="blog-read-time">10 min read</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 5: Technovate -->
+          <a
+            class="blog-card"
+            href="https://www.linkedin.com/posts/dipanmazumder_technovateforindia-innovation-teamwork-activity-7363967752732061697-ddqT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEPgLo8B6vtvx502HiV7pthxr1PTf3twvvs"
+            target="_blank"
+            rel="noopener"
+          >
+            <div class="blog-image">
+              <div class="blog-placeholder">
+                <i class="fas fa-brain"></i>
+              </div>
+              <div class="blog-category">Ideathon</div>
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">
+                Secure 1st place in the College Internal Jury Round
+              </h3>
+              <p class="blog-excerpt">
+                Behind the scenes of Team Porjoton Sathi's victory strategy,
+                technical decisions and team coordination
+              </p>
+              <div class="blog-meta">
+                <span class="blog-date">September 2025</span>
+                <span class="blog-read-time">5 min read</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 6: Leadership - Coming Soon -->
+          <div
+            class="blog-card"
+            onclick="showComingSoon('Leading Tech Teams: Lessons from Competition Success')"
+            style="cursor: pointer"
+          >
+            <div class="blog-image">
+              <div class="blog-placeholder">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="blog-category">Leadership</div>
+              <div class="coming-soon-badge">📝 Coming Soon</div>
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">
+                Leading Tech Teams: Lessons from Competition Success
+              </h3>
+              <p class="blog-excerpt">
+                Key learnings about technical leadership, team dynamics and
+                managing multiple projects simultaneously
+              </p>
+              <div class="blog-meta">
+                <span class="blog-date">...</span>
+                <span class="blog-read-time">7 min read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inline JavaScript for Blog -->
+    <script>
+      // Show "Coming Soon" notification
+      function showComingSoon(blogTitle) {
+        // Remove any existing notification
+        const existingNotification = document.querySelector(
+          ".coming-soon-notification"
+        );
+        if (existingNotification) {
+          existingNotification.remove();
+        }
+
+        // Create notification element
+        const notification = document.createElement("div");
+        notification.className = "coming-soon-notification";
+        notification.innerHTML = `
+        <div class="notification-content">
+            <div class="notification-icon">📝</div>
+            <div class="notification-text">
+                <h4>Blog Under Construction</h4>
+                <p>"${blogTitle}" will be published soon on LinkedIn!</p>
+                <small>Stay tuned for in-depth technical content</small>
+            </div>
+            <button class="notification-close" onclick="this.parentElement.parentElement.remove()">×</button>
+        </div>
+    `;
+
+        document.body.appendChild(notification);
+
+        // Auto remove after 4 seconds
+        setTimeout(() => {
+          if (notification && notification.parentElement) {
+            notification.remove();
+          }
+        }, 4000);
+      }
+    </script>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Experience &amp; Leadership</h2>
+          <p class="section-subtitle">
+            Leading teams and building innovative solutions
+          </p>
+        </div>
+        <div class="experience-timeline">
+          <div class="experience-item">
+            <div class="experience-date">Oct 2024 - Present</div>
+            <div class="experience-content">
+              <h3>Team Lead &amp; AI-ML Expert, Computer Vision Developer</h3>
+              <h4>Team Dot Slash</h4>
+              <p>
+                Leading AI/ML & Cpmputer Vision development across multiple
+                national competition projects
+              </p>
+              <ul class="experience-achievements">
+                <li>Managing 2 simultaneous SIH 2025 projects</li>
+                <li>Leading team of 6+ developers</li>
+                <li>1st place among 140+ teams in college hackathon</li>
+                <li>Technical leadership in AI/ML and Computer Vision</li>
+              </ul>
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="experience-date">Jan 2023 - Present</div>
+            <div class="experience-content">
+              <h3>Solo Developer &amp; Founder</h3>
+              <h4>Personal Projects</h4>
+              <p>
+                Building production-ready AI applications solving real-world
+                problems
+              </p>
+              <ul class="experience-achievements">
+                <li>10+ completed GitHub projects</li>
+                <li>1,000+ combined GitHub engagement</li>
+                <li>
+                  Multiple domains: Healthcare, Safety, Agriculture, Sports
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education" style="margin-top: -60%">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Education &amp; Certifications</h2>
+          <p class="section-subtitle">
+            Building strong foundations in technology
+          </p>
+        </div>
+        <div class="education-content">
+          <div class="education-card">
+            <div class="education-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="education-details">
+              <h3>B.Tech in Information Technology</h3>
+              <h4>Techno India College of Technology, New Town</h4>
+              <p class="education-period">2023 - 2027 (Pre-Final Year)</p>
+              <p class="education-specialization">
+                Specialization: AI/ML and Computer Vision
+              </p>
+            </div>
+          </div>
+          <div class="certifications">
+            <h3>Certifications</h3>
+            <div class="cert-list">
+              <div class="cert-item">
+                <i class="fas fa-certificate"></i>
+                <span>Google Data Analytics Capstone</span>
+              </div>
+              <div class="cert-item">
+                <i class="fas fa-certificate"></i>
+                <span>Machine Learning with Python (Coursera)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">
+            Open to opportunities and collaborations
+          </p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:dipanmazumder313@gmail.com"
+                  >dipanmazumder313@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <div>
+                <h4>LinkedIn</h4>
+                <a href="https://linkedin.com/in/dipanmazumder" target="_blank"
+                  >linkedin.com/in/dipanmazumder</a
+                >
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-github"></i>
+              <div>
+                <h4>GitHub</h4>
+                <a href="https://github.com/dipan313" target="_blank"
+                  >github.com/dipan313</a
+                >
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <span>New Town, Kolkata, West Bengal, India</span>
+              </div>
+            </div>
+            <div class="availability-status">
+              <div class="status-indicator"></div>
+              <span>Available for Opportunities</span>
+            </div>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+                rows="6"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full-width">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="margin-top: -10%">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-text">
+            <p>
+              &copy; 2024 Dipan Mazumder. Built with passion for AI and
+              innovation.
+            </p>
+          </div>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-social">
+            <a href="https://github.com/dipan313" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://linkedin.com/in/dipanmazumder" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="mailto:dipanmazumder313@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div id="projectModal" class="modal" onclick="closeModal()">
+      <div class="modal-content" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <div class="modal-header">
+          <h2 id="modalTitle">Project Title</h2>
+          <p id="modalSubtitle">Project Subtitle</p>
+        </div>
+        <div class="modal-body">
+          <div class="modal-image">
+            <div id="modalImagePlaceholder" class="modal-placeholder">
+              <i class="fas fa-image"></i>
+            </div>
+          </div>
+          <div class="modal-details">
+            <div class="modal-section">
+              <h3>Overview</h3>
+              <p id="modalDescription">Detailed project description</p>
+            </div>
+            <div class="modal-section">
+              <h3>Key Features</h3>
+              <ul id="modalFeatures"></ul>
+            </div>
+            <div class="modal-section">
+              <h3>Technologies Used</h3>
+              <div id="modalTech" class="tech-tags"></div>
+            </div>
+            <div class="modal-section">
+              <h3>Challenges &amp; Solutions</h3>
+              <p id="modalChallenges">Challenge details</p>
+            </div>
+            <div class="modal-section">
+              <h3>Outcome &amp; Impact</h3>
+              <p id="modalOutcome">Project outcome</p>
+            </div>
+            <div class="modal-links">
+              <a
+                id="modalGithub"
+                href="#"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a
+                id="modalDemo"
+                href="#"
+                target="_blank"
+                class="btn btn-outline"
+              >
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog Post Modal -->
+    <div id="blogModal" class="modal" onclick="closeBlogModal()">
+      <div
+        class="modal-content blog-modal-content"
+        onclick="event.stopPropagation()"
+      >
+        <button class="modal-close" onclick="closeBlogModal()">&times;</button>
+        <div class="blog-modal-header">
+          <h2 id="blogModalTitle">Blog Post Title</h2>
+          <div class="blog-modal-meta">
+            <span id="blogModalDate">Date</span>
+            <span id="blogModalReadTime">Read time</span>
+            <span id="blogModalCategory" class="blog-modal-category"
+              >Category</span
+            >
+          </div>
+        </div>
+        <div class="blog-modal-body">
+          <div id="blogModalContent">
+            <p>Blog content will be loaded here...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
