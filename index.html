@@ -231,9 +231,7 @@
             <div class="timeline-content">
               <h3>SIH 2025 Participant</h3>
               <h4>Smart India Hackathon</h4>
-              <p>
-                2 Projects nominated - Sports &amp; Public Safety domains
-              </p>
+              <p>2 Projects nominated - Sports &amp; Public Safety domains</p>
               <span class="timeline-date">2025</span>
             </div>
           </div>
@@ -277,6 +275,7 @@
               <div class="project-tags">
                 <span class="tag">Computer Vision</span>
                 <span class="tag">MediaPipe</span>
+                <span class="tag">IoT</span>
                 <span class="tag">Real-time</span>
               </div>
               <div class="project-highlight">
@@ -339,7 +338,7 @@
               <div class="project-tags">
                 <span class="tag">Full-Stack</span>
                 <span class="tag">AI Detection</span>
-                <span class="tag">Django</span>
+                <span class="tag">MongoDB</span>
               </div>
               <div class="project-highlight">
                 <i class="fas fa-globe"></i>
@@ -365,7 +364,9 @@
               </p>
               <div class="project-tags">
                 <span class="tag">Computer Vision</span>
-                <span class="tag">Mobile</span>
+                <span class="tag">Height Calculation</span>
+                <span class="tag">Mobile Application</span>
+                <span class="tag">Market Ready</span>
                 <span class="tag">Sports Tech</span>
               </div>
               <div class="project-highlight">
@@ -401,12 +402,13 @@
               </p>
               <div class="project-tags">
                 <span class="tag">Django</span>
+                <span class="tag">Leaflet JS</span>
                 <span class="tag">API</span>
                 <span class="tag">Distance-Calculation</span>
               </div>
               <div class="project-highlight">
                 <i class="fas fa-shield-alt"></i>
-                <span>Full-Stack • Geo-location API • Real-time sharing</span>
+                <span> Solo Project • Full-Stack • Real-time sharing</span>
               </div>
             </div>
           </div>
@@ -441,7 +443,7 @@
               </div>
               <div class="project-highlight">
                 <i class="fas fa-brain"></i>
-                <span>Image Processing • Real Time • OpenCV</span>
+                <span> Solo Project • Image Processing • Real Time</span>
               </div>
             </div>
           </div>
@@ -954,7 +956,7 @@
     </script>
 
     <!-- Experience Section -->
-    <section id="experience" class="experience">
+    <section id="experience" class="experience" style="margin-bottom: -70%;">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Experience &amp; Leadership</h2>
@@ -976,6 +978,7 @@
                 <li>Managing 2 simultaneous SIH 2025 projects</li>
                 <li>Leading team of 6+ developers</li>
                 <li>1st place among 140+ teams in college hackathon</li>
+                <li>Finalist of Hack4Bengal: Eastern India's Largest Hackathon</li>
                 <li>Technical leadership in AI/ML and Computer Vision</li>
               </ul>
             </div>
@@ -1002,11 +1005,254 @@
       </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education" style="margin-top: -60%">
+    <!-- COMPLETE FIXED EDUCATION SECTION -->
+    <section id="education" class="education">
+      <style>
+        /* Education Section Inline Styles - FIXED VERSION */
+        .education {
+          padding: 100px 0;
+          background: var(--bg-primary);
+          position: relative;
+          overflow: visible;
+          z-index: auto;
+          margin: 0;
+          clear: both;
+        }
+
+        .education::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: radial-gradient(
+              circle at 20% 50%,
+              rgba(0, 123, 255, 0.1) 0%,
+              transparent 50%
+            ),
+            radial-gradient(
+              circle at 80% 20%,
+              rgba(255, 107, 107, 0.1) 0%,
+              transparent 50%
+            );
+          pointer-events: none;
+          z-index: 0;
+        }
+
+        .education .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+          position: relative;
+          z-index: 1;
+        }
+
+        .education .section-header {
+          text-align: center;
+          margin-bottom: 60px;
+        }
+
+        .education .section-title {
+          font-size: 3rem;
+          font-weight: 700;
+          color: #ffffff;
+          margin-bottom: 15px;
+          background: linear-gradient(135deg, #007bff, #ff6b6b);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+
+        .education .section-subtitle {
+          font-size: 1.2rem;
+          color: #b0b0b0;
+          max-width: 600px;
+          margin: 0 auto;
+          line-height: 1.6;
+        }
+
+        .education-content {
+          display: grid;
+          gap: 40px;
+          max-width: 800px;
+          margin: 0 auto;
+        }
+
+        .education-card {
+          background: rgba(255, 255, 255, 0.05);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 20px;
+          padding: 40px;
+          backdrop-filter: blur(10px);
+          transition: all 0.4s ease;
+          position: relative;
+          overflow: hidden;
+          z-index: 1;
+        }
+
+        .education-card::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 3px;
+          background: linear-gradient(90deg, #007bff, #ff6b6b, #28a745);
+          opacity: 0;
+          transition: opacity 0.4s ease;
+          z-index: -1;
+        }
+
+        .education-card:hover::before {
+          opacity: 1;
+        }
+
+        .education-card:hover {
+          transform: translateY(-10px);
+          background: rgba(255, 255, 255, 0.08);
+          border-color: rgba(0, 123, 255, 0.3);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .education-card .education-icon {
+          text-align: center;
+          margin-bottom: 25px;
+        }
+
+        .education-card .education-icon i {
+          font-size: 3rem;
+          color: #007bff;
+          background: linear-gradient(135deg, #007bff, #0056b3);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+
+        .education-details h3 {
+          font-size: 1.8rem;
+          font-weight: 700;
+          color: #ffffff;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+
+        .education-details h4 {
+          font-size: 1.3rem;
+          font-weight: 500;
+          color: #007bff;
+          margin-bottom: 15px;
+          text-align: center;
+        }
+
+        .education-period {
+          font-size: 1rem;
+          color: #b0b0b0;
+          text-align: center;
+          margin-bottom: 10px;
+          font-style: italic;
+        }
+
+        .education-specialization {
+          font-size: 1.1rem;
+          color: #28a745;
+          text-align: center;
+          font-weight: 500;
+        }
+
+        .certifications {
+          background: rgba(255, 255, 255, 0.05);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 20px;
+          padding: 40px;
+          backdrop-filter: blur(10px);
+          transition: all 0.4s ease;
+          z-index: 1;
+          position: relative;
+        }
+
+        .certifications:hover {
+          background: rgba(255, 255, 255, 0.08);
+          border-color: rgba(40, 167, 69, 0.3);
+        }
+
+        .certifications h3 {
+          font-size: 1.8rem;
+          font-weight: 700;
+          color: #ffffff;
+          margin-bottom: 25px;
+          text-align: center;
+        }
+
+        .cert-list {
+          display: grid;
+          gap: 15px;
+        }
+
+        .cert-item {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          padding: 15px 20px;
+          background: rgba(255, 255, 255, 0.05);
+          border-radius: 10px;
+          transition: all 0.3s ease;
+        }
+
+        .cert-item:hover {
+          background: rgba(255, 255, 255, 0.1);
+          transform: translateX(10px);
+        }
+
+        .cert-item i {
+          font-size: 1.2rem;
+          color: #28a745;
+        }
+
+        .cert-item span {
+          color: #ffffff;
+          font-weight: 500;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+          .education {
+            padding: 80px 0;
+          }
+
+          .education .section-title {
+            font-size: 2.5rem;
+          }
+
+          .education .section-subtitle {
+            font-size: 1.1rem;
+          }
+
+          .education-card,
+          .certifications {
+            padding: 30px 20px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .education .section-title {
+            font-size: 2rem;
+          }
+
+          .education-card,
+          .certifications {
+            padding: 25px 15px;
+          }
+
+          .cert-item {
+            padding: 12px 15px;
+          }
+        }
+      </style>
+
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Education &amp; Certifications</h2>
+          <h2 class="section-title">Education & Certifications</h2>
           <p class="section-subtitle">
             Building strong foundations in technology
           </p>
@@ -1025,16 +1271,40 @@
               </p>
             </div>
           </div>
+          <div class="education-card">
+            <div class="education-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="education-details">
+              <h3>Higher Secondary Education</h3>
+              <h4>Bongaon High School, Bongaon, North 24 PGS, West Bengal</h4>
+              <p class="education-period">2021 - 2023</p>
+            </div>
+          </div>
+          <div class="education-card">
+            <div class="education-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="education-details">
+              <h3>Secondary Education</h3>
+              <h4>Bongaon High School, Bongaon, North 24 PGS, West Bengal</h4>
+              <p class="education-period">2015 - 2021</p>
+            </div>
+          </div>
           <div class="certifications">
             <h3>Certifications</h3>
             <div class="cert-list">
               <div class="cert-item">
                 <i class="fas fa-certificate"></i>
-                <span>Google Data Analytics Capstone</span>
+                <span><a href="https://www.coursera.org/account/accomplishments/verify/FH853M2C1COD" style="color: white;">Google Data Analytics Capstone</a></span>
               </div>
               <div class="cert-item">
                 <i class="fas fa-certificate"></i>
-                <span>Machine Learning with Python (Coursera)</span>
+                <span><a href="https://www.coursera.org/account/accomplishments/verify/7BKVGY98KO06" style="color: white;">Machine Learning with Python (IBM)</a></span>
+              </div>
+              <div class="cert-item">
+                <i class="fas fa-certificate"></i>
+                <span><a href="https://www.credly.com/badges/30dd9507-0426-4f31-809c-2620dd029517/linked_in_profile" style="color: white;">Machine Learning Using Python (NPTEL)</a></span>
               </div>
             </div>
           </div>
@@ -1042,8 +1312,255 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- COMPLETE FIXED CONTACT SECTION -->
     <section id="contact" class="contact">
+      <style>
+        /* Contact Section Inline Styles - FIXED VERSION */
+        .contact {
+          padding: 100px 0;
+          background: var(--bg-primary);
+          position: relative;
+          overflow: visible;
+          z-index: auto;
+          margin-top: 100%;
+          clear: both;
+        }
+
+        .contact::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: radial-gradient(
+              circle at 80% 50%,
+              rgba(40, 167, 69, 0.1) 0%,
+              transparent 50%
+            ),
+            radial-gradient(
+              circle at 20% 80%,
+              rgba(0, 123, 255, 0.1) 0%,
+              transparent 50%
+            );
+          pointer-events: none;
+          z-index: 0;
+        }
+
+        .contact .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+          position: relative;
+          z-index: 1;
+        }
+
+        .contact .section-header {
+          text-align: center;
+          margin-bottom: 60px;
+        }
+
+        .contact .section-title {
+          font-size: 3rem;
+          font-weight: 700;
+          color: #ffffff;
+          margin-bottom: 15px;
+          background: linear-gradient(135deg, #007bff, #ff6b6b);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+
+        .contact .section-subtitle {
+          font-size: 1.2rem;
+          color: #b0b0b0;
+          max-width: 600px;
+          margin: 0 auto;
+          line-height: 1.6;
+        }
+
+        .contact-content {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 60px;
+          margin-top: 60px;
+        }
+
+        .contact-info {
+          display: grid;
+          gap: 25px;
+        }
+
+        .contact-item {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          padding: 25px;
+          background: rgba(255, 255, 255, 0.05);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 15px;
+          backdrop-filter: blur(10px);
+          transition: all 0.4s ease;
+          position: relative;
+          z-index: 1;
+        }
+
+        .contact-item:hover {
+          background: rgba(255, 255, 255, 0.08);
+          border-color: rgba(0, 123, 255, 0.3);
+          transform: translateY(-5px);
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-item i {
+          font-size: 1.5rem;
+          color: #007bff;
+          min-width: 30px;
+        }
+
+        .contact-item h4 {
+          font-size: 1.1rem;
+          font-weight: 600;
+          color: #ffffff;
+          margin-bottom: 5px;
+        }
+
+        .contact-item a {
+          color: #b0b0b0;
+          text-decoration: none;
+          transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+          color: #007bff;
+        }
+
+        .contact-item span {
+          color: #b0b0b0;
+        }
+
+        .availability-status {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 20px 25px;
+          background: rgba(40, 167, 69, 0.1);
+          border: 1px solid rgba(40, 167, 69, 0.3);
+          border-radius: 15px;
+          margin-top: 20px;
+          position: relative;
+          z-index: 1;
+        }
+
+        .status-indicator {
+          width: 12px;
+          height: 12px;
+          background: #28a745;
+          border-radius: 50%;
+          animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+          0% {
+            box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.7);
+          }
+          70% {
+            box-shadow: 0 0 0 10px rgba(40, 167, 69, 0);
+          }
+          100% {
+            box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
+          }
+        }
+
+        .availability-status span {
+          color: #28a745;
+          font-weight: 600;
+        }
+
+        .contact-form {
+          display: grid;
+          gap: 25px;
+          position: relative;
+          z-index: 1;
+        }
+
+        .form-group {
+          position: relative;
+        }
+
+        .form-group input,
+        .form-group textarea {
+          width: 100%;
+          padding: 18px 20px;
+          background: rgba(255, 255, 255, 0.05);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 12px;
+          color: #ffffff;
+          font-size: 1rem;
+          transition: all 0.3s ease;
+          backdrop-filter: blur(10px);
+          box-sizing: border-box;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+          outline: none;
+          border-color: #007bff;
+          background: rgba(255, 255, 255, 0.08);
+          box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+          color: #888;
+        }
+
+        .form-group textarea {
+          resize: vertical;
+          min-height: 120px;
+        }
+
+        .contact .btn-full-width {
+          width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+          .contact {
+            padding: 80px 0;
+          }
+
+          .contact .section-title {
+            font-size: 2.5rem;
+          }
+
+          .contact .section-subtitle {
+            font-size: 1.1rem;
+          }
+
+          .contact-content {
+            grid-template-columns: 1fr;
+            gap: 40px;
+          }
+
+          .contact-item {
+            padding: 20px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .contact .section-title {
+            font-size: 2rem;
+          }
+
+          .contact-item {
+            padding: 15px;
+            flex-direction: column;
+            text-align: center;
+          }
+        }
+      </style>
+
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Let's Connect</h2>
@@ -1092,7 +1609,7 @@
               <span>Available for Opportunities</span>
             </div>
           </div>
-          <form class="contact-form">
+          <form class="contact-form" id="contactFormMain">
             <div class="form-group">
               <input
                 type="text"
@@ -1126,6 +1643,68 @@
           </form>
         </div>
       </div>
+
+      <script>
+        // Contact Form Handler and Animations (Inline JavaScript)
+        (function () {
+          const contactForm = document.getElementById("contactFormMain");
+
+          if (contactForm) {
+            contactForm.addEventListener("submit", function (e) {
+              e.preventDefault();
+
+              const submitBtn = contactForm.querySelector(
+                'button[type="submit"]'
+              );
+              const originalText = submitBtn.textContent;
+
+              // Show loading state
+              submitBtn.textContent = "Sending...";
+              submitBtn.disabled = true;
+              submitBtn.style.opacity = "0.7";
+
+              // Simulate form submission (replace with your backend)
+              setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+                submitBtn.style.opacity = "1";
+
+                // Show success message
+                alert("Message sent successfully! I'll get back to you soon.");
+
+                // Reset form
+                contactForm.reset();
+              }, 2000);
+            });
+          }
+
+          // Intersection Observer for animations
+          const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+          };
+
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+              }
+            });
+          }, observerOptions);
+
+          // Observe animated elements
+          const animatedElements = document.querySelectorAll(
+            ".education-card, .certifications, .contact-item, .contact-form"
+          );
+          animatedElements.forEach((el) => {
+            el.style.opacity = "0";
+            el.style.transform = "translateY(30px)";
+            el.style.transition = "all 0.6s ease";
+            observer.observe(el);
+          });
+        })();
+      </script>
     </section>
 
     <!-- Footer -->
@@ -1133,10 +1712,10 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-text">
-            <p>
-              &copy; 2024 Dipan Mazumder. Built with passion for AI and
+            <span>
+              &copy; 2025 Dipan Mazumder. Built with passion for AI and
               innovation.
-            </p>
+            </span>
           </div>
           <div class="footer-links">
             <a href="#home">Home</a>
@@ -1241,6 +1820,105 @@
         </div>
       </div>
     </div>
+
+    <script>
+      // Education and Contact Sections JavaScript
+      document.addEventListener("DOMContentLoaded", function () {
+        // Intersection Observer for animations
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: "0px 0px -50px 0px"
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate-in");
+            }
+          });
+        }, observerOptions);
+
+        // Observe all animated elements
+        const animatedElements = document.querySelectorAll(
+          ".education-card, .certifications, .contact-item, .contact-form"
+        );
+        animatedElements.forEach((el) => {
+          observer.observe(el);
+        });
+
+        // Add CSS animations
+        const style = document.createElement("style");
+        style.textContent = `
+        .education-card,
+        .certifications,
+        .contact-item,
+        .contact-form {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .animate-in {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+
+        .cert-item {
+            transform: translateX(-20px);
+            opacity: 0;
+            transition: all 0.4s ease;
+        }
+
+        .certifications.animate-in .cert-item {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .certifications.animate-in .cert-item:nth-child(1) {
+            transition-delay: 0.1s;
+        }
+
+        .certifications.animate-in .cert-item:nth-child(2) {
+            transition-delay: 0.2s;
+        }
+    `;
+        document.head.appendChild(style);
+
+        // Contact Form Handling
+        const contactForm = document.querySelector(".contact-form");
+
+        if (contactForm) {
+          contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const submitBtn = contactForm.querySelector(
+              'button[type="submit"]'
+            );
+            const originalText = submitBtn.textContent;
+
+            // Show loading state
+            submitBtn.textContent = "Sending...";
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = "0.7";
+
+            // Simulate form submission (replace with your backend)
+            setTimeout(() => {
+              submitBtn.textContent = originalText;
+              submitBtn.disabled = false;
+              submitBtn.style.opacity = "1";
+
+              // Show success message
+              alert("Message sent successfully! I'll get back to you soon.");
+
+              // Reset form
+              contactForm.reset();
+            }, 2000);
+          });
+        }
+
+        console.log("Education and Contact sections loaded successfully!");
+      });
+    </script>
 
     <script src="app.js"></script>
   </body>
