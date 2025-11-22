@@ -15,7 +15,6 @@ This portfolio website serves as a comprehensive showcase of my technical expert
 ## ✨ Features
 
 ### 🎨 **Design & User Experience**
-- **Fully Responsive**: Seamlessly adapts to all device sizes (mobile, tablet, desktop)
 - **Modern UI/UX**: Clean, professional design with smooth animations and transitions
 - **Fast Loading**: Optimized assets and efficient code for quick page loads
 - **Cross-Browser Compatible**: Works flawlessly across all major browsers
