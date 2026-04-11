@@ -1,0 +1,47 @@
+.cursor-dot {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-cyan);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  box-shadow: 0 0 10px var(--accent-cyan);
+}
+
+.cursor-trail {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(0, 212, 255, 0.4);
+  background-color: rgba(0, 212, 255, 0.05);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 99998;
+  transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+}
+
+.cursor-trail.scale-up {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(168, 85, 247, 0.2);
+  border-color: rgba(168, 85, 247, 0.6);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+}
+
+/* Hide custom cursor on mobile to avoid buggy touch interactions */
+@media (hover: none) and (pointer: coarse), (max-width: 768px) {
+  .cursor-dot, .cursor-trail {
+    display: none !important;
+  }
+}
+
+/* Base body style so we don't double up with default pointer, but optional depending on preference */
+body {
+  cursor: none;
+}
+a, button {
+  cursor: none;
+}

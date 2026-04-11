@@ -1,0 +1,26 @@
+.footer-section {
+  padding: 3rem 0;
+  background: var(--nav-glass);
+  border-top: 1px solid var(--glass-border);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.footer-copyright {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.footer-heart {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
