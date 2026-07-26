@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import '../styles/Preloader.css';
 
 const greetings = [
+  " ",
+  " ",
   "Namaskar",
   "Hello",
   "Hola",
